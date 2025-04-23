@@ -1,0 +1,178 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    user-select: none;
+    scroll-behavior: smooth;
+}
+button, input, select{
+    outline: none;
+}
+button:hover{
+    cursor: pointer;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: inherit;
+}
+body{
+    background: rgb(206,22,24);
+}
+.container{
+    max-width: 1150px;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.login__main{
+    height: 597px;
+    margin: 18vh auto;
+    background: white;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.login__img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login__img2{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login__sub{
+    width: 50%;
+    height: 597px;
+    padding: 50px 40px;
+}
+.login__head{
+    font-family: "Roboto";
+    font-size: 32px;
+    font-weight: 700;
+}
+.login__line{
+    height: 3px;
+    width: 80px;
+    background: #CE1618;
+    margin: 10px 0;
+}
+.login__liner{
+    height: 3px;
+    width: 110px;
+    background: #CE1618;
+    margin: 10px 0;
+}
+.login__input{
+    display: grid;
+    margin-top: 30px;
+}
+.login__label{
+    font-size: 16px;
+    font-family: "Roboto";
+}
+.inp{
+    padding: 12px;
+    background: #E5E5E5;
+    border: none;
+    font-size: 16px;
+    font-family: "Roboto";
+    margin-top: 5px;
+}
+.login__check{
+    margin: 30px 0;
+}
+.login__btn{
+    background: #CE1618;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: "Roboto";
+    width: 100%;
+    border: 1px solid #CE1618;
+    color: white;
+    padding: 15px;
+    transition: .3s ease;
+}
+.login__btn2{
+    margin-top: 30px;
+    background: #CE1618;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: "Roboto";
+    width: 100%;
+    border: 1px solid #CE1618;
+    color: white;
+    padding: 15px;
+    transition: .3s ease;
+}
+.login__btn:hover{
+    color: #CE1618;
+    background: white;
+}
+.login__btn2:hover{
+    color: #CE1618;
+    background: white;
+}
+.login__collection{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.login__text{
+    font-family: "Roboto";
+    font-size: 16px;
+    color: gray;
+    transition: .3s ease;
+}
+.login__text:hover{
+    text-decoration: underline;
+}
+
+
+@media (max-width:990px) {
+    body{
+        background: url("../images/girl2.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .login__main{
+        border-radius: 30px;
+    }
+    .bg__img{
+        display: block;
+    }
+    .login__img{
+        display: none;
+    }
+    .login__sub{
+        width: 100%;
+    }
+    .login__main{
+        margin: 15.2vh auto;
+    }
+}
+
+
+@media (max-width:550px) {
+    .login__sub{
+        padding: 30px 20px;
+    }
+}
