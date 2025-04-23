@@ -162,6 +162,9 @@ body{
     .login__img{
         display: none;
     }
+    .login__img2{
+        display: none;
+    }
     .login__sub{
         width: 100%;
     }
